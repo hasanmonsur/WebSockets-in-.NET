@@ -45,14 +45,14 @@ This repository includes a minimal but production-inspired implementation of:
 
 ```mermaid
 flowchart LR
-    A[Client Application] --> B[WebSocket Connection]
-    B --> C[ASP.NET Core WebSocket Endpoint]
-    C --> D[WebSocketManagerService]
-    D --> E[Connection Registry]
-    D --> F[Message Processing]
-    F --> G[Echo / Broadcast Response]
-    G --> H[Connected Client(s)]
-    H --> I[Real-time UI / Console / Dashboard]
+    A["Client Application"] --> B["WebSocket Connection"]
+    B --> C["ASP.NET Core WebSocket Endpoint"]
+    C --> D["WebSocketManagerService"]
+    D --> E["Connection Registry"]
+    D --> F["Message Processing"]
+    F --> G["Echo or Broadcast Response"]
+    G --> H["Connected Clients"]
+    H --> I["Real-time UI"]
 ```
 
 This simple architecture shows how a WebSocket connection remains open, allowing immediate message exchange without repeated HTTP requests.
